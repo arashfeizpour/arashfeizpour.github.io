@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Arash's Python Pit - EMC Functions</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="index.html">Home</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="About.html">About</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="AllProjects.html">Portfolio</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="https://arashinterests.wordpress.com/">Blogs</a>
+      </li>       
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="Contact.html">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1 style="color:whitesmoke;" class="mb-1"> <a href="index.html" style="color: white; text-decoration:none;"> Arash's Python Pit </a> </h1>
+      <h3 class="mb-5">
+        <em style="color:whitesmoke;">My coding endeavours!
+</em>
+      </h3>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#PostContent">Go to Project</a>
+    </div>
+    <div class="overlay"></div>
+  </header>
+
+   <!-- Portfolio -->
+  <section class="content-section" id="portfolio">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h3 class="text-secondary mb-0"></h3>
+        <h2 class="mb-5">This Project:</h2>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6" style="width:800px; margin:0 auto;">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">The Evolutionary Machinery Needed for EMC</div>
+                <p class="mb-0">In this article, the evolutionary functions used in the EMC project are explained in detail.” </p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>   
+        
+    
+    
+    
+    
+    
+  <!-- Post Content -->
+  <section class="content-section bg-light" id="PostContent">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2></h2>
+          <p class="lead mb-5" style="text-align:left; text-align:justify;"> <b> Fitness Function: </b>
+          <br /> As my undergrad project I had to write an EMC (Evolutionary Music Composition) program. In this post I want to go over the fitness function calcultion part of the program.
+          <br /> In <a href="https://nbviewer.jupyter.org/github/arashfeizpour/Python-Repo/blob/master/Fitness%20Function%20of%20EMC.ipynb">this program</a>, we have used the cosine used in inner product definition (loaned from IR (information retrieval)) to compare the analysis of a generated chromosome with a target analysis. The complete description of this fitness function is given in the link of the program.
+              
+          <figure>
+          <img src="img/Posts/EMCFunction2017/2018-2-14-FitnessFunctionEMC.jfif" alt="Fitness Progress" style="width:100%">
+          <figcaption  class="lead mb-5" style = "font-size: 15px" >Fig. 1 - The final fitness.</figcaption>
+          </figure>              
+              
+          <p class="lead mb-5" style="text-align:left; text-align:justify;">
+          <b>Selection Operator:</b> <br />
+          In this part, I want to go over the Selection Operator function of the program and how the first step toward a new generation is made and two parents are selected. <br />
+          In <a href="https://nbviewer.jupyter.org/github/arashfeizpour/Python-Repo/blob/master/SelectionOperatorofEMC.ipynb"> this program</a>, we have used Tournament Selection to select each parent needed between a group of candidate parents. Note the fact that the highest fitness randomly selected parent (candidate) has the highest probabilty of being selected, but, the other ones are also probable. Read more in the Jupyter Notebook I have shared in <a href="https://nbviewer.jupyter.org/github/arashfeizpour/Python-Repo/blob/master/SelectionOperatorofEMC.ipynb"> this link</a>.
+            </p>
+   
+          <figure>
+          <img src="img/Posts/EMCFunction2017/2018-2-26-SelectionOperatorEMC.jfif" alt="EMC Overview" style="width:100%">
+          <figcaption  class="lead mb-5" style = "font-size: 15px" >Fig. 2 - The selected parents using this function!</figcaption>
+          </figure> 
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+    
+    
+    
+  <!-- Portfolio Navigation -->
+  <section class="content-section bg-light" id="about">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="NumericalIntersection.html">Next Project</a>
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="AllProjects.html">Return to All Projects</a>
+        </div>
+      </div>
+    </div>
+  </section>    
+        
+    
+    
+    
+
+
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/arashfeizpour">
+            <i class="icon-social-facebook"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/arashfeizpour">
+            <i class="icon-social-instagram"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/arashfeizpour/">
+            <i class="icon-social-linkedin"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="https://github.com/arashfeizpour/">
+            <i class="icon-social-github"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; Arash's Python Pit 2020</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+
+</body>
+
+</html>

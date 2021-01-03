@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Arash's Python Pit - EMC Full</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="index.html">Home</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="About.html">About</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="AllProjects.html">Portfolio</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="https://arashinterests.wordpress.com/">Blogs</a>
+      </li>       
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="Contact.html">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1 style="color:whitesmoke;" class="mb-1"> <a href="index.html" style="color: white; text-decoration:none;"> Arash's Python Pit </a> </h1>
+      <h3 class="mb-5">
+        <em style="color:whitesmoke;">My coding endeavours!
+</em>
+      </h3>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#PostContent">Go to Project</a>
+    </div>
+    <div class="overlay"></div>
+  </header>
+
+   <!-- Portfolio -->
+  <section class="content-section" id="portfolio">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h3 class="text-secondary mb-0"></h3>
+        <h2 class="mb-5">This Project:</h2>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6" style="width:800px; margin:0 auto;">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Evolutionary Music Composer (Full Version)</div>
+                <p class="mb-0">Here we want to do something that throughout history has been done by the most artist minds known worldwide for their fascinating works of art. It is said by Gustav Mahler: “If a composer could say what he had to say in words he would not bother trying to say it in music.” </p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>   
+    
+  <!-- Post Content -->
+  <section class="content-section bg-light" id="PostContent">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2></h2>
+          <p class="lead mb-5" style="text-align:left; text-align:justify;"> Here we want to do something that throughout history has been    done by the most artist minds known worldwide for their fascinating works of art. It is said by Gustav Mahler :
+              “If a composer could say what he had to say in words he would not bother trying to say it in music.”
+          <br /> But, I say that the most important thing using AI or other forms of searching algorithms achieves in this matter is strictly following commands even when the data is larger than a human can afford to work in a life time, a machine is emotionless and never gets tired, it doesn’t need sleep or get sick left and right. In general, computers can achieve the ability of an artistic mind, but it takes another artistic mind to work on such a great task. <br /> In this article Johannes Jensen has taken a quantitative approach and through different chapters he introduce the skillset used, terminology and two different ways of replicating brilliant composers. There are some basic characteristics required for a melody to be a good (e.g. tones should fit the chord progression, having motifs, etc.) however the formal rules of music composition is simple and few, what makes the difference between a young composer and the brilliant Mozart is the knowledge and experience built up in their work(that’s the essence we’re trying to capture). <br />Evolutionary algorithms have shown striking outcomes when it comes to making stuff, finding stuff and etc. in an optimized way using least amount of steps. In this article we’re going to use these algorithms for composing music. That’s the philosophy behind the title, we’re going to evolve music through “Evolutionary Music Composition” (EMC). In every problem in which evolutionary techniques are invoked, the key to the solution is finding the best fitness function. Fitness function varies from one problem to another and the most suitable one is sometimes too hard for us to find. <br /> So the task at hand is finding a well working fitness function that allows evolving pleasant music. Some said that the best way is to use a groups of people rating the evolved music. There’s a couple of problems in this approach among which efficiency, expense, and most certainly the matter of pleasantness and preference comes to mind. Anyone can discern pleasant music but not everyone like the style (i.e. Mozart is pleasant for me but I rather listen to Drowning Pool heavy metal band). </p>
+              
+        
+          <figure>
+          <img src="img/Posts/EMC2017/Fitness Progress Diagram.jpg" alt="Fitness Progress" style="width:100%">
+          <figcaption  class="lead mb-5" style = "font-size: 15px" >Fig. 1 - In this diagram you can see the progress of fitness as the genetic program iterates.</figcaption>
+          </figure>              
+              
+          <p class="lead mb-5" style="text-align:left; text-align:justify;">
+          In <a href="https://nbviewer.jupyter.org/github/arashfeizpour/Python-Repo/blob/master/EMC.ipynb">this program</a>, we want to code a program that can receive a set of notes in the form of pitches and durations and generate new music through a genetic algorithm which mimics the highest frequency events of the original score and as a result capture the essense. If you want to know more about the theory and idea behind this program, you can read <a href="https://drive.google.com/file/d/1vjYExXpPeSk8-0CDOGN7wd0gI1uN5uq_/view?usp=sharing  ">this document</a>. This is my report on the subject and I tried my best to put what I understood in simple and concise sentences. </p>
+   
+          <figure>
+          <img src="img/Posts/EMC2017/EMCfiles.jfif" alt="EMC Overview" style="width:100%">
+          <figcaption  class="lead mb-5" style = "font-size: 15px" >Fig. 2 - A view of the program, the output files, and the final fitness diagram vs generations.</figcaption>
+          </figure> 
+            
+          <figure>
+          <img src="img/Posts/EMC2017/comparison Chromatic Tone Metric.jpg" alt="comparison Chromatic Tone Metric" style="width:100%">
+          <figcaption  class="lead mb-5" style = "font-size: 15px" >Fig. 3 - This bar-plot shows the chromatic tone of the target score vs the one generated by our genetic program. </figcaption>
+          </figure> 
+          
+        <p class="lead mb-5" style="text-align:left; text-align:justify;"> You can see the unique final output file <a href="https://github.com/arashfeizpour/arashfeizpour.github.io/blob/master/images/2018-3-15-EMC.md/EMC%20Output.txt">here</a>.
+            
+            </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+
+    
+    
+    
+    
+  <!-- Portfolio Navigation -->
+  <section class="content-section bg-light" id="about">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="NumericalMethods.html">Next Project</a>
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="AllProjects.html">Return to All Projects</a>
+        </div>
+      </div>
+    </div>
+  </section>    
+    
+    
+    
+    
+    
+    
+    
+
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/arashfeizpour">
+            <i class="icon-social-facebook"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/arashfeizpour">
+            <i class="icon-social-instagram"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/arashfeizpour/">
+            <i class="icon-social-linkedin"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="https://github.com/arashfeizpour/">
+            <i class="icon-social-github"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; Arash's Python Pit 2020</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+
+</body>
+
+</html>

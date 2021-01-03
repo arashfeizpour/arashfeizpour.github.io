@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Arash's Python Pit - Small Numerical Porjects</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="index.html">Home</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="About.html">About</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="AllProjects.html">Portfolio</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="https://arashinterests.wordpress.com/">Blogs</a>
+      </li>       
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="Contact.html">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1 style="color:whitesmoke;" class="mb-1"> <a href="index.html" style="color: white; text-decoration:none;"> Arash's Python Pit </a> </h1>
+      <h3 class="mb-5">
+        <em style="color:whitesmoke;">My coding endeavours!
+</em>
+      </h3>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#PostContent">Go to Project</a>
+    </div>
+    <div class="overlay"></div>
+  </header>
+
+   <!-- Portfolio -->
+  <section class="content-section" id="portfolio">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h3 class="text-secondary mb-0"></h3>
+        <h2 class="mb-5">This Project:</h2>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6" style="width:800px; margin:0 auto;">
+          <a class="portfolio-item js-scroll-trigger" href="#toc">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2" style="background-color: ">Small Numerical Projects</div>
+                <p class="mb-0" style="background-color: "> Random Number Generation Convergence, Iterated Mapping of a Recursive Function, Changes of a Logistic Map While Altering r Parameter, Solving a Simple Free Fall Equation Numerically, The Effects of Drag Force on a Mass in Free Fall, Water Velocity Out of a Hole, Lissajous curves </p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio-5.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>   
+    
+  <!-- Post Content -->
+  <section class="content-section bg-light" id="PostContent">
+    <div class="container text-left">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2 id="toc">Table of Content:</h2>
+            
+          <a class="btn btn-primary btn-xl js-scroll-trigger mb-2 text-left" href="#RandomNumber">1 - Random Number Generation Convergence</a>
+            
+            <a class="btn btn-primary btn-xl js-scroll-trigger mb-2 text-left" href="#IteratedMapping">2 - Iterated Mapping of a Recursive Function</a>
+            
+            <a class="btn btn-primary btn-xl js-scroll-trigger mb-2 text-left" href="#rParameter">3 - Changes of a Logistic Map While Altering r Parameter</a>
+            
+            <a class="btn btn-primary btn-xl js-scroll-trigger mb-2 text-left" href="#SimpleFreeFall">4 - Solving a Simple Free Fall Equation Numerically</a>
+            
+            <a class="btn btn-primary btn-xl js-scroll-trigger mb-2 text-left" href="#DragForce">5 - The Effects of Drag Force on a Mass in Free Fall</a>
+            
+            <a class="btn btn-primary btn-xl js-scroll-trigger mb-2 text-left" href="#WaterVelocity">6 - Water Velocity Out of a Hole</a>
+            
+            <a class="btn btn-primary btn-xl js-scroll-trigger mb-2 text-left" href="#LissajousCurves">7 - Lissajous curves</a>  
+            
+            
+            
+            
+            
+            
+          <!-- RandomNumber -->
+          <p class="lead mb-5" style="text-align:left; text-align:justify;" id="RandomNumber"> <b style = "font-size: 25px"> <a href="https://github.com/arashfeizpour/Python-Repo/blob/master/RandomNumberGenerationConvergence">1 - Random Number Generation Convergence:</a> </b>
+          <br /> We always hear that random numbers have a gaussian distribution meaning that they have a peak at the mean-value if plotted and the distribution decreases gradually from both sides of this peak.<br />
+          In <a href="https://github.com/arashfeizpour/Python-Repo/blob/master/RandomNumberGenerationConvergence"> this program </a> we want to check this feature of random numbers using the random package of Python. This matter at hand is generally called Random Number Generation (RNG) Convergence. We see that we can try this easily using a few lines of code. we take the mean value of an interval of numbers, and we generate random numbers in that interval. then, summing all those values and split it by the number of them (averaging), we see that the peak of the distribution is indeed with some small error around the mean value of that interval. <br />
+          <b> OUTPUTs :</b> <br />
+            <strong>-0.0002685990603428223</strong>: this is the error of computed mean value from the actual one. <br />
+          </p>
+          
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <!-- Iterated Mapping -->
+            <p class="lead mb-5" style="text-align:left; text-align:justify;" id="IteratedMapping"> <b style = "font-size: 25px"><a href="https://github.com/arashfeizpour/Python-Repo/blob/master/IteratedMapping">2 - Iterated Mapping of a Recursive Function: </a> </b><br />
+               
+           Do you want to know how to work out a recursive function looking like Xn = f(Xn+1) using python?     <br />
+           In <a href="https://github.com/arashfeizpour/Python-Repo/blob/master/IteratedMapping"> this program </a> we want to discuss a simple physical model whose dynamics leads directly to such an iterated map, namely a periodically kicked particle of mass m. Use <a href="https://books.google.com/books?id=ykhwBJBkxIsC&pg=PA187&lpg=PA187&dq=Xn%2B1+%3D+4rXn(1-Xn)&source=bl&ots=-DXTS-r0qH&sig=FJ-ZmsOx_1Z91sz62SFrpHX93S0&hl=en&sa=X&ved=0ahUKEwiI4YeA7OrXAhVJFOwKHTltDi4Q6AEIKTAA#v=onepage&q=Xn%2B1%20%3D%204rXn(1-Xn)&f=false"> this excerpt </a> from Hans Jürgen Korsch, Hans-Jörg Jodl, Timo Hartmann’s book named “Chaos: A Program Collection for the PC” to see the theoretical foundations of this well-known logistic map. <br />
+               
+           Here we want to make a diagram of xn+1 = 4rxn (1 − xn) and see how it behaves. <br />
+              
+            </p>
+            
+            
+          <figure>
+          <img src="img/Posts/SimpleNumericalProjects/IteratedMapping.png" alt="Fitness Progress" style="width:100%">
+          <figcaption  class="lead mb-5" style = "font-size: 15px" >Fig. 1 - <b>Bifurcation diagram: </b> It shows how and where X(r) takes on a set of numerical values toward which a system tends to evolve. Note how its values prong between 0.7-0.8 and 0.8-0.9. These values are called <a href="https://en.wikipedia.org/wiki/Attractor">“attractors”</a> in mathematics. </figcaption>
+          </figure>    
+            
+            
+            
+            
+            
+         
+            
+            
+            
+           <!-- r Parameter -->
+            <p class="lead mb-5" style="text-align:left; text-align:justify;"> <b style = "font-size: 25px" id="rParameter"><a href="https://github.com/arashfeizpour/Python-Repo/blob/master/IteratedMappingVariableR">3 - Changes of a Logistic Map While Altering r Parameter: </a></b> <br /> 
+            In <a href="https://github.com/arashfeizpour/Python-Repo/blob/master/IteratedMappingVariableR"> this program </a> we want to illustrate how a 2D iterated map created by the function defined in the previous section, namely the one for Xn+1 = 4rXn(1-Xn), corresponds to different values of r.:
+ 
+            </p>   
+            
+          <figure>
+          <img src="img/Posts/SimpleNumericalProjects/figure_1%20(1).png" alt="Fitness Progress" style="width:100%">
+          <figcaption  class="lead mb-5" style = "font-size: 15px" >Fig. 2 - <b>Plotting x vs. n: </b> Note how altering r changes the diagram for the iterated map. </figcaption>
+          </figure> 
+            
+            <p class="lead mb-5" style="text-align:left; text-align:justify;"> 
+            Why is this kind of maps important? It is often cited as an archetypal example of how complex, chaotic behaviour can arise from very simple non-linear dynamical equations. Just look at the changes of the diagram when altering r.</p> 
+            
+            
+            
+            
+ 
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <!-- SimpleFreeFall -->
+            <p class="lead mb-5" style="text-align:left; text-align:justify;" id="SimpleFreeFall"> <b style = "font-size: 25px"><a href="https://github.com/arashfeizpour/Python-Repo/blob/master/SimpleFreeFall(Numerical)">4 - Solving a Simple Free Fall Equation Numerically: </a></b>
+              <br /> In <a href="https://github.com/arashfeizpour/Python-Repo/blob/master/SimpleFreeFall(Numerical)"> this program </a> we want to illustrate how a mass behaves when only force of gravity applies. In addition, we want to see how changing dt changes the results. <br />        
+            </p>
+            
+          <figure>
+          <img src="img/Posts/SimpleNumericalProjects/figure_1.png" alt="Fitness Progress" style="width:100%">
+          <figcaption  class="lead mb-5" style = "font-size: 15px" >Fig. 3 - <b>Plotting h vs. t: </b> Note how the rate of change in position increases throughout the entire diagram, showing that velocity is always increasing. </figcaption>
+          </figure>              
+            
+            <p class="lead mb-5" style="text-align:left; text-align:;">            
+              <b> OUTPUTs :</b> <br />   
+            at t = 1s :<br /> 
+
+            Anlytically : height = 15.1<br /> 
+
+            for dt = 0.001 : height = 15.099999999999557<br /> 
+
+            for dt = 0.00001 : height = 15.099999999920604<br /> 
+
+            as you can see with dt = 0.00001 the result at t = 1s is accurate to 10 decimal place!<br /> 
+
+            for dt = 0.000001 : height = 15.100000000815756<br /> 
+
+            for dt = 0.0000005 : height = 15.099999998496276<br /> 
+
+            as you can see smaller dt doesnt mean more accuracy<br /> 
+
+            It hits the ground at : 2.021<br /> 
+            </p>
+            
+            
+            <p class="lead mb-5" style="text-align:left; text-align:justify;"> <b>One can see that results became pretty close to what they should be: </b> <br /> 
+                
+            
+                
+            </p>
+            
+            <table>
+              <tr>
+                <th>dt</th>
+                <th>Error</th>
+              </tr>
+              <tr>
+                <td>0.001	</td>
+                <td>4.4231285e-13</td>
+
+              </tr>
+              <tr>
+                <td>0.00001</td>
+                <td>7.9396045e-11</td>
+
+              </tr>
+              <tr>
+                <td>0.000001</td>
+                <td>-8.1575635e-10</td>
+
+              </tr>
+              <tr>
+                <td>0.0000005</td>
+                <td>1.50372337e-9</td>
+
+              </tr>
+            </table>
+            
+            <p class="lead mb-5" style="text-align:left; text-align:justify;">
+            Did you note the fact that the smaller we take our dt to be, the worse the result gets? why do you think this happens although taking dt to be smaller should result in a more accurate result? In numerical approximations, there is an optimum for the methods’ variables . . knowing this we can state that dt=0.001 is the closest to that optimum.
+            </p>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+          <!-- DragForce -->    
+            <p class="lead mb-5" style="text-align:left; text-align:justify;" id="DragForce"> <b style = "font-size: 25px"><a href="https://github.com/arashfeizpour/Python-Repo/blob/master/DragForceEffect">5 - The Effects of Drag Force on a Mass in Free Fall: </a></b>
+          <br /> In <a href="https://github.com/arashfeizpour/Python-Repo/blob/master/DragForceEffect"> this program </a> we want to illustrate how drag force affects free fall . .  <br />
+          Using a mass released from 100m above earth’s surface which has a final velocity (terminal velocity) of -6m/s due to drag force:
+          </p>
+            
+          <figure>
+          <img src="img/Posts/SimpleNumericalProjects/Velocity%20and%20acceleration%20vs%20time.png" alt="Fitness Progress" style="width:50%"><img src="img/Posts/SimpleNumericalProjects/position%20vs%20time.png" alt="Fitness Progress" style="width:50%">
+          <figcaption class="lead mb-5" style = "font-size: 15px" >Fig. 4 - <b>Plotting v, a and h vs. t:</b> Note how velocity reaches a limit, how acceleration approaches zero gradually, and how mass’ changes of position correspond to drag force by resembeling a line more and more (showing that acceleration is approaching zero and velocity is getting closer to being constant (terminal velocity)). </figcaption>
+          </figure>         
+
+        <p class="lead mb-5" style="text-align:left; text-align:;">            
+          <b> OUTPUTs :</b> <br />
+            <strong>accelerations :</strong><br />  [-9.802, -8.425546545944242, -7.242382635979693, -6.2253654359299375, -5.351163665164269, -4.5997223562341505, -3.9538027760529633, -3.398586954001, -2.9213377444780946, -2.5111066254360286, -2.1584825295286905, -1.8553759458428334, -1.5948333393107652, -1.370877630420989, -1.1783710756892247, -1.0128974032456584, -0.8706604996237859, -0.7483973235355305, -0.643303048797053, -0.5529667191172629, -0.4753159386125878, -0.40856932919909594, -0.3511956641922264, -0.30187874060246955, -0.2594871842661834, -0.22304849511433855, -0.19172673715452618, -0.1648033613545682, -0.1416607214875505] <br />
+            
+            
+            <strong>velocities :</strong><br />  [0, -0.8425546545944242, -1.5667929181923934, -2.1893294617853876, -2.7244458283018145, -3.1844180639252295, -3.5797983415305263, -3.9196570369306265, -4.211790811378436, -4.462901473922039, -4.6787497268749085, -4.864287321459192, -5.023770655390268, -5.160858418432367, -5.27869552600129, -5.379985266325857, -5.467051316288235, -5.541891048641789, -5.6062213535214935, -5.66151802543322, -5.709049619294478, -5.749906552214387, -5.78502611863361, -5.815213992693857, -5.841162711120475, -5.863467560631909, -5.882640234347362, -5.899120570482819, -5.913286642631575] <br />
+            
+            
+            <strong>positions :</strong><br />  [100, 99.91574453454055, 99.7590652427213, 99.54013229654277, 99.26768771371259, 98.94924590732006, 98.591266073167, 98.19930036947395, 97.7781212883361, 97.33183114094389, 96.8639561682564, 96.37752743611047, 95.87515037057145, 95.35906452872821, 94.83119497612809, 94.2931964494955, 93.74649131786667, 93.19230221300249, 92.63168007765034, 92.06552827510703, 91.49462331317758, 90.91963265795614, 90.34113004609279, 89.7596086468234, 89.17549237571134, 88.58914561964815, 88.00088159621342, 87.41096953916514, 86.81964087490198]          
+          </p>            
+            
+            <p class="lead mb-5" style="text-align:left; text-align:justify;"> 
+            <b>Here we took dt to be 0.1 and you can see that results became pretty close to what they should be . .</b></p> 
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <!-- Water Velocity -->
+            <p class="lead mb-5" style="text-align:left; text-align:justify;"> <b style = "font-size: 25px" id="WaterVelocity"><a href="https://github.com/arashfeizpour/Python-Repo/blob/master/SimpleWaterFlow"> 6 - Water Velocity Out of a Hole: </a></b> <br /> 
+              How fast can water get out of a hole at the bottom of a cylindrical container? This is a program I have written for one of my independent projects on d evising new green energy sources.. <br />
+              <br /> In <a href="https://github.com/arashfeizpour/Python-Repo/blob/master/SimpleWaterFlow"> this program </a> we want to calculate the velocity of the water (with respect to time) which is being pushed out of a cylindrical container by a dense piston.<br />  
+              Using steel piston with weight equal to 49568048N, in a container of 20m height filled with water we get:
+            </p>
+            
+          <figure>
+          <img src="img/Posts/SimpleNumericalProjects/SimpleWaterFlow.png" alt="Fitness Progress" style="width:100%">
+          <figcaption  class="lead mb-5" style = "font-size: 15px" >Fig. 5 - <b> Plotting v vs. t: </b> This is a simple model but gives us an approximate order of the magnitude of velocity. </figcaption>
+          </figure>             
+
+            <p class="lead mb-5" style="text-align:left; text-align:;">            
+              <b> OUTPUTs :</b> <br />   
+                first entering velocity : 752.4041437124883 m/s<br /> 
+
+                in kilometers : 2699.475586811666 km/h<br /> 
+
+                last entering velocity : 502.4421291627446 m/s<br /> 
+
+                in kilometers : 1802.6618710100952 km/h<br /> 
+
+                the highest velocity in dams is 511.121 km/h in the dam Spirit of Australia.
+            </p>            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <!-- Lissajous Curves -->
+            <p class="lead mb-5" style="text-align:left; text-align:justify;"> <b style = "font-size: 25px" id="LissajousCurves"> <a href="https://github.com/arashfeizpour/Python-Repo/blob/master/lissajous.py"> 7 - Lissajous curves: </a></b> <br /> Lissajous curves are the family of curves described by the parametric equations (given a few lines later) and they have applications in physics, astronomy, and other sciences (Remeber simple harmonic oscillators?). The curves close IF omega_x/omega_y is rational. <br />
+            In <a href="https://github.com/arashfeizpour/Python-Repo/blob/master/lissajous.py"> this program </a> we want to draw them and investigate different forms of them. In the following, <b>x = sin(A * wx*t + phiX)</b> and <b>y = sin(B * wy*t + phiY)</b> formulas are used:
+ 
+            </p>    
+            
+            
+          <figure>
+          <img src="img/Posts/SimpleNumericalProjects/equal%20pi-2.png" alt="Fitness Progress" style="width:50%"><img src="img/Posts/SimpleNumericalProjects/equal.png" alt="Fitness Progress" style="width:50%">
+          <figcaption  class="lead mb-5" style = "font-size: 15px" >Fig. 6 - A = B, and deltaPhi = Pi/2 (left) and 0 (right) </figcaption>
+          </figure> 
+            
+            
+          <figure>
+          <img src="img/Posts/SimpleNumericalProjects/1%202.png" alt="Fitness Progress" style="width:50%"><img src="img/Posts/SimpleNumericalProjects/4%208.png" alt="Fitness Progress" style="width:50%">
+          <figcaption  class="lead mb-5" style = "font-size: 15px" >Fig. 7 - A = 1, B = 2 (left) and A = 4, B = 8 (right). deltaPhi = 0 for both. </figcaption>
+          </figure> 
+          
+            
+          <figure>
+          <img src="img/Posts/SimpleNumericalProjects/1%203.png" style="width:50%"><img src="img/Posts/SimpleNumericalProjects/1%204.png" alt="Fitness Progress" style="width:50%">
+          <figcaption  class="lead mb-5" style = "font-size: 15px" >Fig. 8 - A = 1, B = 3 (left) and A = 1, B = 4 (right). deltaPhi = 0 for both. </figcaption>
+          </figure> 
+            
+            
+          <figure>
+          <img src="img/Posts/SimpleNumericalProjects/1%201-2.png" style="width:50%"><img src="img/Posts/SimpleNumericalProjects/1%201-3.png" alt="Fitness Progress" style="width:50%">
+          <figcaption  class="lead mb-5" style = "font-size: 15px" >Fig. 9 - A = 1, B = 1/2 (left) and A = 1, B = 1/3 (right). deltaPhi = 0 for both. </figcaption>
+          </figure> 
+            
+            
+          <figure>
+          <img src="img/Posts/SimpleNumericalProjects/2%203.png" style="width:50%"><img src="img/Posts/SimpleNumericalProjects/2%207.png" alt="Fitness Progress" style="width:50%">
+          <figcaption  class="lead mb-5" style = "font-size: 15px" >Fig. 10 - A = 2, B = 3 (left) and A = 2, B = 7 (right). deltaPhi = 0 for both. </figcaption>
+          </figure> 
+            
+            
+          <figure>
+          <img src="img/Posts/SimpleNumericalProjects/5%2013.png" style="width:50%"><img src="img/Posts/SimpleNumericalProjects/3%205.png" alt="Fitness Progress" style="width:50%">
+          <figcaption  class="lead mb-5" style = "font-size: 15px" >Fig. 11 - A = 5, B = 13 (left) and A = 3, B = 5 (right). deltaPhi = 0 for both. </figcaption>
+          </figure>
+           
+                
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+
+    
+    
+  <!-- Portfolio Navigation -->
+  <section class="content-section bg-light" id="about">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="EMCFunctions2017.html">Next Project</a>
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="AllProjects.html">Return to All Projects</a>
+        </div>
+      </div>
+    </div>
+  </section>    
+    
+    
+    
+    
+    
+    
+
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/arashfeizpour">
+            <i class="icon-social-facebook"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/arashfeizpour">
+            <i class="icon-social-instagram"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/arashfeizpour/">
+            <i class="icon-social-linkedin"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="https://github.com/arashfeizpour/">
+            <i class="icon-social-github"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; Arash's Python Pit 2020</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="Arash" content="">
+
+  <title>Arash's Python Pit - numerical Mehtods</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="index.html">Home</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="About.html">About</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="AllProjects.html">Portfolio</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="https://arashinterests.wordpress.com/">Blogs</a>
+      </li>       
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="Contact.html">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1 style="color:whitesmoke;" class="mb-1"> <a href="index.html" style="color: white; text-decoration:none;"> Arash's Python Pit </a> </h1>
+      <h3 class="mb-5">
+        <em style="color:whitesmoke;">My coding endeavours!
+</em>
+      </h3>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#PostContent">Go to Project</a>
+    </div>
+    <div class="overlay"></div>
+  </header>
+
+   <!-- Portfolio -->
+  <section class="content-section" id="portfolio">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h3 class="text-secondary mb-0"></h3>
+        <h2 class="mb-5">This Project:</h2>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6" style="width:800px; margin:0 auto;">
+          <a class="portfolio-item js-scroll-trigger" href="#toc">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2" style="background-color: ">Numerical Methods</div>
+                <p class="mb-0" style="background-color: ">  Euler, Euler-Cromer, Euler-Richardson, and Verlet  </p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio-7.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>   
+    
+  <!-- Post Content -->
+  <section class="content-section bg-light" id="PostContent">
+    <div class="container text-left">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2 id="toc">Table of Content:</h2>
+            
+          <a class="btn btn-primary btn-xl js-scroll-trigger mb-2 text-left" href="#EulerRichSecond">1 - Solving a Second Order Eq. using Euler-Richardson Method:</a>
+            
+            <a class="btn btn-primary btn-xl js-scroll-trigger mb-2 text-left" href="#RungeKuttaFirst">2 - Solving a Simple ODE using First-Order Runge-Kutta</a>
+            
+            <a class="btn btn-primary btn-xl js-scroll-trigger mb-2 text-left" href="#DampedRungeKutta">3 - Solving a Damped Harmonic Motion Equation (Runge Kutta) </a>
+            
+            <a class="btn btn-primary btn-xl js-scroll-trigger mb-2 text-left" href="#comparison">4 - Comparing Numerical Methods Through Conservation of Energy </a>
+            
+
+            
+            
+            
+            
+            
+            
+            
+          <!-- Euler-Richardson Second Order -->
+          <p class="lead mb-3" style="text-align:left; text-align:justify;" id="TwoVarTwoEq"> <b style = "font-size: 25px"> <a href="https://github.com/arashfeizpour/Python-Repo/blob/master/FallingStyrophoamEu-rich">1 - Solving a Second Order Eq. using Euler-Richardson Method:</a> </b>
+          <br /> We found the velocities of a falling styrophoam using forward and central difference method in the <a href="GeneralKnowledgeProjects.html">“Using Central and Forward Difference Approximation to Find Velocity Values”</a> article in one of the projects here. Here we want to go the other way around and find velocities using acceleration and time instead of positions and time. <br />
+          In <a href="https://github.com/arashfeizpour/Python-Repo/blob/master/FallingStyrophoamEu-rich"> this program </a> we want to calculate the velocity of the water (with respect to time) which is being pushed out of a cylindrical container by a dense piston. <br />
+          <b> OUTPUTs for a mass released from 20m above earth’s surface which has a final velocity of 6m/s due to drag force: </b>
+          </p>
+            
+
+          <figure>
+          <img src="img/Posts/NumericalMethods/Position%20and%20Velocity%20of%20a%20falling%20Styrophoam.png" alt="Fitness Progress" style="width:100%">
+          <figcaption  class="lead mb-3" style = "font-size: 15px" > Fig. 1 - <b>Plotting v and h vs. t: </b> Note how velocity reaches a limit and how mass’ changes of position with time correspond to this fact by getting closer to a line. </figcaption>
+          </figure>   
+            
+          <p class="lead mb-3" style="text-align:left; text-align:;">            
+              <b> OUTPUTs :</b> <br />   
+            The final velocity : 5.999944226367632<br />  
+
+              The final position : -6.575783701985236e-05<br />  
+
+              The total time elapsed : 3.7576000000035052<br />  
+            </p>  
+            
+            <p class="lead mb-3" style="text-align:left; text-align:justify;"> 
+            <b>Here we took dt to be 0.0001 and you can see that the result became pretty close to what it should be . .</b>
+            
+            </p> 
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <!-- Runge Kutta First order -->
+            <p class="lead mb-3" style="text-align:left; text-align:justify;" id="RungeKuttaFirst"> <b style = "font-size: 25px"><a href="https://github.com/arashfeizpour/Python-Repo/blob/master/SimpleODERungeKutta">2 - Solving a Simple ODE using First-Order Runge-Kutta: </a> </b><br />
+               
+           Do you want to know how to work out a ODE using Runge-Kutta (first order)? you can simply make the loop a little longer and change it to a higher order . .     <br />
+           In <a href="https://github.com/arashfeizpour/Python-Repo/blob/master/SimpleODERungeKutta"> this program </a> we want to solve a pretty simple ordinary differential equation numerically using only the first order Runge-Kutta. This numerical method is one of the most strong ones yet and has a high accuracy. If you get the handle of it (and you will by looking at the codes), you can use it in higher orders easily for you own scientific problems. <br />    
+           <b>The equation we want to solve is :</b> du/dx = -2*u + x + 4
+            </p>
+            
+            
+          <figure>
+          <img src="img/Posts/NumericalMethods/uVSx.png" alt="Fitness Progress" style="width:100%">
+          <figcaption  class="lead mb-5" style = "font-size: 15px" > Fig. 2 - <b>u vs. x: </b> It shows how u changes with changing x. </figcaption>
+          </figure>    
+            
+          <p class="lead mb-3" style="text-align:left; text-align:justify;">  
+          It is easy – yet not implemented here – to plot the analytical result and check out the error function to see the power of Runge-Kutta (you can plot Runge-Kutta results for different orders and see how they change as you go to a higher order as well)  
+          </p>  
+            
+            
+            
+            
+            
+            
+            
+         
+            
+            
+            
+           <!-- Damped Harmonic (Runge Kutta) -->
+            <p class="lead mb-3" style="text-align:left; text-align:justify;"> <b style = "font-size: 25px" id="DampedRungeKutta"><a href="https://github.com/arashfeizpour/Python-Repo/blob/master/DampedSpringMassMotionUsingRungeKutta">3 - Solving a Damped Harmonic Motion Equation (Runge Kutta): </a></b> <br /> 
+            All of the real springs are non-ideal and have a damped motion, meaning the amplitude of oscillations of their energy, acceleration, position, velocity reduces with time till they are ocillating no more.<br /> </p>
+            
+            <figure style="text-align: center">
+            <img src="img/Posts/NumericalMethods/Damped_spring.gif" alt="Fitness Progress" style="width:15%; align-content: center" >
+            <figcaption  class="lead mb-3" style =    "font-size: 15px; text-align: center" > Fig. 3 - Damped Harmonic Oscillator. </figcaption>
+            </figure> 
+        
+            
+            <p class="lead mb-3" style="text-align:left; text-align:justify;"> 
+            In <a href="https://github.com/arashfeizpour/Python-Repo/blob/master/DampedSpringMassMotionUsingRungeKutta"> this program </a>  we want to illustrate the behaviour of a damepd spring-mass system (hanging) through solving dv / dt = ‘- (2 * gamma * v + w0 ** 2 * x)’ (where gamma is the damping constant and w0 is the angular frequency) using Runge-Kutta method and plotting its diagrams. You can easily change the gamma variable through changing c and see how the damping constant aletrs the diagram.
+                <br />
+            For linear dependence of retarding force c = 0.5, mass m = 5kg, and spring constant k=5 we get these diagrams:
+            </p>   
+            
+            <figure>
+            <img src="img/Posts/NumericalMethods/DampedSpringPosition.png" alt="Fitness Progress" style="width:33.3%"><img src="img/Posts/NumericalMethods/DampedSpringVelocity.png" alt="Fitness Progress" style="width:33.3%"><img src="img/Posts/NumericalMethods/DampedSpringAcceleration.png" alt="Fitness Progress" style="width:33.3%">
+            <figcaption  class="lead mb-5" style =    "font-size: 15px" > Fig. 3 - <b>Motion Diagrams: </b>You can see how damping affects all the aspects of a spring-mass system’s motion; All of their amplitudes are reduced with time. Note how acceleration is in its minimum when position is in its maximum and velocity is zero then. </figcaption>
+            </figure> 
+            
+            
+            
+            
+ 
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <!-- Comparison -->
+            <p class="lead mb-3" style="text-align:left; text-align:justify;" id="SymPySecond"> <b style = "font-size: 25px"><a href="https://github.com/arashfeizpour/Python-Repo/blob/master/NumericalMethodsComparison">4 - Comparing Numerical Methods Through Conservation of Energy: </a></b>
+              <br /> 
+                Knowing the fact that the best numerical method we should find is rather case-dependent, we want to compare <a href="https://en.wikipedia.org/wiki/Euler_method">Euler</a>, <a href="https://en.wikipedia.org/wiki/Semi-implicit_Euler_method">Euler-Cromer</a>, <a href="https://arashfeizpour.github.io/NumericalMethodsComparison/www.physics.udel.edu/~bnikolic/teaching/phys660/numerical_ode/node4.html">Euler-Richardson</a>, and <a href="https://en.wikipedia.org/wiki/Verlet_integration">Verlet</a> in the case of solving a second order differential equation to find the energies of a simple harmonic oscillator and check how conservation of energy stands for these numerical methods. <br /> 
+                In <a href="https://github.com/arashfeizpour/Python-Repo/blob/master/NumericalMethodsComparison"> this program </a> we want to solve a pretty simple second order differential equation numerically using the aforementioned methods for a simple harmonic oscillator. Then, we want to find the energy of this motion as we know that energy is conserved and is always equal to the potential energy of the system at its turning points. Looking at the codes you can see that every method has a function for solving the equation to find the position and velocity of spring-mass motion and another fucntion to find the energy difference at different times for each method through the conservation of energy. <br />     
+            
+                <b>The equations we want to solve are :</b> dx/dt = v , dv/dt = -w0**2 * x , dt/dt = 1
+            </p>
+           
+          <h4>Motion Plots</h4>  
+            
+          <figure>
+          <img src="img/Posts/NumericalMethods/EulerCromerMotion.png" alt="Fitness Progress" style="width:100%">
+          <figcaption  class="lead mb-5" style = "font-size: 15px" >Fig. 4 - <b>v,a,x vs. t: </b> This figure shows the position, velocity, and acceleration of the spring-mass system at different times and specifies the turning and equilibrium points using <b>Euler-Cromer (Semi-Implicit Euler)</b> Method. </figcaption>
+          </figure>          
+            
+          <figure>
+          <img src="img/Posts/NumericalMethods/EulerMotion.png" alt="Fitness Progress" style="width:100%">
+          <figcaption  class="lead mb-5" style = "font-size: 15px" >Fig. 5 - <b>v,a,x vs. t: </b> This figure shows the position, velocity, and acceleration of the spring-mass system at different times using <b>Euler Method</b>. </figcaption>
+          </figure> 
+            
+          <figure>
+          <img src="img/Posts/NumericalMethods/EulerRichardsonMotion.png" alt="Fitness Progress" style="width:100%">
+          <figcaption  class="lead mb-5" style = "font-size: 15px" >Fig. 6 - <b>v,a,x vs. t: </b> This figure shows the position, velocity, and acceleration of the spring-mass system at different times using <b>Euler-Richardson Method</b>. </figcaption>
+          </figure> 
+            
+          <figure>
+          <img src="img/Posts/NumericalMethods/VerletMotion.png" alt="Fitness Progress" style="width:100%">
+          <figcaption  class="lead mb-5" style = "font-size: 15px" >Fig. 7 - <b>v,a,x vs. t: </b> This figure shows the position, velocity, and acceleration of the spring-mass system at different times using <b>Verlet </b> Integration. </figcaption>
+          </figure>          
+            
+          <h4>Totally Energy Plots</h4>    
+            
+          <figure>
+          <img src="img/Posts/NumericalMethods/EulerCromerEnergyDifference.png" alt="Fitness Progress" style="width:100%">
+          <figcaption  class="lead mb-5" style = "font-size: 15px" >Fig. 8 - <b>DeltaE vs. t : </b> This figure shows how <b>Euler-Cromer</b> estimation of total energy (potential energy + kinetic energy) which should be constant and equal to Emax (in the codes taken to be E0) differs from this value and hence showing its accuracy. </figcaption>
+          </figure> 
+            
+          <figure>
+          <img src="img/Posts/NumericalMethods/EulerEnergyDifference.png" alt="Fitness Progress" style="width:100%">
+          <figcaption  class="lead mb-5" style = "font-size: 15px" >Fig. 9 - <b>DeltaE vs. t : </b> This figure shows how <b>Euler</b> estimation of total energy (potential energy + kinetic energy) which should be constant and equal to Emax (in the codes taken to be E0) differs from this value and hence showing its accuracy. </figcaption>
+          </figure> 
+            
+          <figure>
+          <img src="img/Posts/NumericalMethods/EulerRichardsonEnergyDifference.png" alt="Fitness Progress" style="width:100%">
+          <figcaption  class="lead mb-5" style = "font-size: 15px" >Fig. 10 - <b>DeltaE vs. t : </b> This figure shows how <b>Euler-Richardson</b> estimation of total energy (potential energy + kinetic energy) which should be constant and equal to Emax (in the codes taken to be E0) differs from this value and hence showing its accuracy. </figcaption>
+          </figure> 
+            
+          <figure>
+          <img src="img/Posts/NumericalMethods/VerletEnergyDifference.png" alt="Fitness Progress" style="width:100%">
+          <figcaption  class="lead mb-5" style = "font-size: 15px" >Fig. 11 - <b>DeltaE vs. t : </b> This fugure shows how <b>Verlet</b> estimation of total energy (potential energy + kinetic energy) which should be constant and equal to Emax (in the codes taken to be E0) differs from this value and hence showing its accuracy. </figcaption>
+          </figure> 
+      
+            
+          <h4>Phase Space Plot</h4>
+            
+          <figure>
+          <img src="img/Posts/NumericalMethods/PhaseSpace.png" alt="Fitness Progress" style="width:100%">
+          <figcaption  class="lead mb-5" style = "font-size: 15px" >Fig. 12 - <b>p vs. t: </b> This figure shows the phase space of this system derived using Euler-Richardson method and as you can see it is as expected, circular. </figcaption>
+          </figure> 
+            
+            
+          <h4>Conclusion:</h4>
+          <p class="lead mb-3" style="text-align:left; text-align:justify;">  
+          It is clear to see that according to the structure of each method the change of energy difference is rather different and with various magnitudes. First place goes to Euler-Richardson, second to Euler-Cromer, third to Verlet, and the last, to Euler. Did you notice the accumulation of error in every method but Euler-Cromer? Where do you think the oscillation of error of Euler-Cromer comes from? 
+          </p> 
+            
+            
+            
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+
+  <!-- Portfolio Navigation -->
+  <section class="content-section bg-light" id="about">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="GeneralKnowledgeProjects.html">Next Project</a>
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="AllProjects.html">Return to All Projects</a>
+        </div>
+      </div>
+    </div>
+  </section>    
+    
+    
+
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/arashfeizpour">
+            <i class="icon-social-facebook"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/arashfeizpour">
+            <i class="icon-social-instagram"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/arashfeizpour/">
+            <i class="icon-social-linkedin"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="https://github.com/arashfeizpour/">
+            <i class="icon-social-github"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; Arash's Python Pit 2020</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+
+</body>
+
+</html>
